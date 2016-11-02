@@ -1,5 +1,5 @@
 {
-    "name":"vx.core",
+    "name":"VX/Core",
     "version":"1.0.0",
     "require":{
         "php":">=5.5.0",
