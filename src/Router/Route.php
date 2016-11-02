@@ -1,10 +1,10 @@
 <?php
 
 
-namespace JT\Core\Router;
+namespace VX\Core\Router;
 
-use JT\Core\Config;
-use JT\Core\ControllerDefault;
+use VX\Core\Config;
+use VX\Core\ControllerDefault;
 
 class Route
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace JT\Core;
+namespace VX\Core;
 
 // test
 
@@ -24,7 +24,7 @@ class MemcacheSocketServer
         'stats' => ['stats'],
     ];
 
-    var $version = 'JT/MemcacheSocketServer';
+    var $version = 'VX/MemcacheSocketServer';
 
     const TYPE_STRING = 0;
     const TYPE_SERIALIZE = 1;

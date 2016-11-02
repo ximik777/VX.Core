@@ -1,6 +1,6 @@
 <?php
 
-namespace JT\Core;
+namespace VX\Core;
 
 class TgBot
 {

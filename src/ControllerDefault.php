@@ -1,8 +1,8 @@
 <?php
 
-namespace JT\Core;
+namespace VX\Core;
 
-use JT\Core\Router\RouteParam;
+use VX\Core\Router\RouteParam;
 use Twig_Autoloader;
 use Twig_Environment;
 use Twig_Loader_Filesystem;

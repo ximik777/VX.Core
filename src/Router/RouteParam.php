@@ -1,6 +1,6 @@
 <?php
 
-namespace JT\Core\Router;
+namespace VX\Core\Router;
 
 class RouteParam
 {

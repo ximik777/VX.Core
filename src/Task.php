@@ -1,8 +1,8 @@
 <?php
 
-namespace JT\Core;
+namespace VX\Core;
 
-use JT\Core\MySQLi\MySQLiStatic AS db;
+use VX\Core\MySQLi\MySQLiStatic AS db;
 
 class Task
 {

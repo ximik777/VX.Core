@@ -1,6 +1,6 @@
 <?php
 
-namespace JT\Core\MySQLi;
+namespace VX\Core\MySQLi;
 
 class MySQLiStatic
 {

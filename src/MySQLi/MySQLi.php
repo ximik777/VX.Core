@@ -1,8 +1,8 @@
 <?php
 
-namespace JT\Core\MySQLi;
+namespace VX\Core\MySQLi;
 
-use JT\Core\Config;
+use VX\Core\Config;
 
 class MySQLi
 {

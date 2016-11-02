@@ -1,7 +1,7 @@
 <?php
 
 
-namespace JT\Core;
+namespace VX\Core;
 
 if(!function_exists('random_int')){
     function random_int($min, $max){

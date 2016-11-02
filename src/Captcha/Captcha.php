@@ -1,8 +1,8 @@
 <?php
 
-namespace JT\Core\Captcha;
+namespace VX\Core\Captcha;
 
-use JT\Core\Config;
+use VX\Core\Config;
 
 class Captcha
 {
