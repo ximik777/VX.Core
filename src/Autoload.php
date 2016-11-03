@@ -16,7 +16,7 @@ class Autoload
     public static function Autoload($class)
     {
         $file = strtr(__DIR__ . str_replace(__NAMESPACE__, "", $class), '\\', '/') . '.php';
-
+        
         if (is_file($file))
             require_once($file);
     }
