@@ -97,7 +97,7 @@ class Route
         $param->view_name = $param->action_name == $this->config['default']['action'] ? $this->config['prefix']['view'] . $param->controller_name : $this->config['prefix']['view'] . $param->controller_name . '_' . $param->action_name;
         $param->controller = $param->controller_name;
         $param->controller_name = $this->config['prefix']['controller'] . $param->controller_name;
-        $param->view_path = "view/{$param->bundle_name}/{$param->view_name}.twig";
+        $param->view_path = "bundle/{$param->bundle_name}/{$param->view_name}.twig";
         $param->action_name = $this->config['prefix']['action'] . $param->action_name;
         $param->bundle_path = "bundle\\{$param->bundle_name}";
         $param->template_path = $this->config['default']['template'];
