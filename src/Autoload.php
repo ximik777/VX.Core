@@ -15,7 +15,13 @@ class Autoload
 
     public static function Autoload($class)
     {
-        $file = strtr(__DIR__ . str_replace(__NAMESPACE__, "", $class), '\\', '/') . '.php';
+        if (0 === strpos($class, 'Twig')) {
+            $file = DR . '/../../../twig/twig/lib/'.str_replace(array('_', "\0"), array('/', ''), $class).'.php';
+        } elseif (0 === strpos($class, 'bundle')) {
+            $file = DR . '/../private/' . strtr($class, '\\', '/') . '.php';
+        } else {
+            $file = strtr(__DIR__ . str_replace(__NAMESPACE__, "", $class), '\\', '/') . '.php';
+        }
         
         if (is_file($file))
             require_once($file);
