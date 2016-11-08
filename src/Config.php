@@ -5,7 +5,6 @@ namespace VX\Core;
 class Config
 {
     private static $config = array();
-    private static $vendor;
     private function __clone()
     {
     }
@@ -21,11 +20,7 @@ class Config
             return self::$config[$key];
         }
 
-        if(!self::$vendor){
-            self::$vendor = substr(__DIR__, 0, strrpos(__DIR__, strtr('/'.__NAMESPACE__, '\\', '/')));
-        }
-
-        if (!is_file($path = self::$vendor . "/../config/{$key}.php")) {
+        if (!is_file($path = DR . "/../config/{$key}.php")) {
             self::$config[$key] = $default;
             return $default;
         }
